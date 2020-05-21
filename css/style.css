@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto' , sans-serif;
+}
+
+.statCard{
+    overflow: hidden;
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.statCard::after, .statCard::before {
+    content: '';
+    position: absolute;
+    background: white;
+    opacity: 0.3;
+    border-radius: 50%;
+}
+
+.statCard::after {
+    height: 13rem;
+    width: 14rem;
+    top:-3rem ;
+    right: -7rem;
+
+}
+
+.statCard::before {
+    height: 14rem;
+    width: 14rem;
+    top: 6rem ;
+    right: -2rem;
+}
+
+.statCard:nth-of-type(3n + 1){
+    background-image: linear-gradient(to right, #f5c388, #fa7c91);
+}
+
+.statCard:nth-of-type(3n + 2){
+    background-image: linear-gradient(to right, #93cdf5, #0580c9);
+}
+
+.statCard:nth-of-type(3n + 3){
+    background-image: linear-gradient(to right, #9fefe7, #06a38f);
+}
+
+.statTitle {
+    margin-bottom: 1.2em;
+}
+
